@@ -1,18 +1,12 @@
-// const prompt = require('prompt-sync')
+const prompt = require("prompt-sync")();
 
-// let numbers = ['9','7','5','3','1']
+let numeros=[]
 
-// maior = numbers[0]
+for(let i=1; i<= 5;i++){
+    let numero=prompt("digite seu numero:");
+    numeros.push(numero)
+}
 
-// for (number in numbers){
-//     if (number > maior){
-//         maior = numbers}}
+let maior = Math.max(...numeros)
 
-numeros = [12, 45, 7, 89, 23];
-
-
-maior = numeros[0]
-
-for(i in numeros){
-    if (i > maior){
-        maior = i}}
+ console.log("o numero de menor para maior:",maior)
